@@ -1,9 +1,10 @@
 def main():
-    numero = int(input("Introdueix un numero: "))
-    print("Has seleccionat la taula del ", numero)
-    for i in range(0,11):
-        resultado = i*numero
-        print(("%d x %d = %d")%(numero, i, resultado))
+    numero = 0
+    for numero in range(0,11):
+        print(("\nTaula del %d") % (numero))
+        for i in range(0, 11):
+            total = i*numero
+            print(("%d * %d = %d")%(numero, i, total))
 
 if __name__ == "__main__":
     main()
