@@ -1,17 +1,14 @@
-import os
-os.system("clear")
-
+ROMBO = 7
 
 def main():
-    n = int(input("Posa un nombre natural: "))
-    for i in range(n+1):
-        for j in range(n-i):
+    for i in range(ROMBO+1):
+        for j in range(ROMBO-i):
             print(" ", end=" ")
         for j in range(2*i-1):
             print(i, end=" ")
         print()
-    for i in range(n-1, 0, -1):
-        for j in range(n-i):
+    for i in range(ROMBO-1, 0, -1):
+        for j in range(ROMBO-i):
             print(" ", end=" ")
         for j in range(2*i-1):
             print(i, end=" ")
