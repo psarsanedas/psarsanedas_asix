@@ -7,7 +7,7 @@ def main():
     suspes = 0
     i = 0
 
-    for i in range(TOTAL):  # Hola
+    for i in range(TOTAL):  # Holaa
         notes = int(input("Introdueix les notes: "))
         while notes < 0 or notes > 10:
             notes = int(input("Introdueix les notes: "))
