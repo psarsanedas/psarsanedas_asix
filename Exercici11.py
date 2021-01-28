@@ -7,7 +7,7 @@ def main():
     suspes = 0
     i = 0
 
-    for i in range(TOTAL):  # Holaa
+    for i in range(TOTAL):
         notes = int(input("Introdueix les notes: "))
         while notes < 0 or notes > 10:
             notes = int(input("Introdueix les notes: "))
@@ -19,9 +19,9 @@ def main():
             auxsuspes += 1
     aprovat = aprovat / auxaprovat
     suspes = suspes / auxsuspes
-    print("La mitjana d'aprovats és: ", aprovat)
-    print("La mitjana de suspesos és: ", suspes)
-    print("La quantitat d'aprovats és: ", auxaprovat)
+    print(f"\nLa mitjana d'aprovats és: {aprovat:.2f}")
+    print(f"La mitjana de suspesos és: {suspes:.2f}")
+    print("\nLa quantitat d'aprovats és: ", auxaprovat)
     print("La quantitat de suspesos és: ", auxsuspes)
 
 
